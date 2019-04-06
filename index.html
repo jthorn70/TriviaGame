@@ -4,12 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js">
-    <link href="game.js">
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">    <title>Document</title>
 </head>
 <body>
-    <h1>T R I V I A</h1>
-    
+</div>
+<div class="row">
+    <div id="start-screen" >
+        <h1>Ed, Edd, n Eddy Trivia!</h1>
+        <button id="start-button" type="button">Click to Start</button>
+    </div>
+</div>
+
+<div id="quiz-box" class="container">
+    <div class="row">
+        <h3 id="title" class="col-12">Ed, Edd, n Eddy Trivia!</h3><br><br>
+        <div id="timeLeft" class="col-12">Time Left: <span>45</span> seconds left</div><br>
+        <div id="quizContent" class="col-12">
+            <div id="q1"
+                <p>What was the main type of candy the Ed boys tried to get?</p>
+                <input type="radio" id="multipleChoice1A" name="question1" value="a">Jawbreakers<br>
+                <input type="radio" id="multipleChoice1B" name="question1" value="b">Gobstoppers<br>
+                <input type="radio" id="multipleChoice1C" name="question1" value="c">Wonka Bars<br>
+                <input type="radio" id="multipleChoice1D" name="question1" value="d">Sour Patch Kids<br>
+            </div><br>
+
+            <div id="q2"
+                <p>What was the last name of the sisters who had a crush on the Ed boys?</p>
+                <input type="radio" id="multipleChoice2A" name="question2" value="a">Stinky Sisters<br>
+                <input type="radio" id="multipleChoice2B" name="question2" value="b">Kanker Sisters<br>
+                <input type="radio" id="multipleChoice2C" name="question2" value="c">Wonky Sisters<br>
+                <input type="radio" id="multipleChoice2D" name="question2" value="d">Konker Sisters<br>
+            </div><br>
+
+            <div id="q3"
+            <p>What was the name of the character who was the son of a shephard?</p>
+                <input type="radio" id="multipleChoice3A" name="question3" value="a">Ralf<br>
+                <input type="radio" id="multipleChoice3B" name="question3" value="b">Randall<br>
+                <input type="radio" id="multipleChoice3C" name="question3" value="c">Rolf<br>
+                <input type="radio" id="multipleChoice3D" name="question3" value="d">Ricky<br>
+            </div><br>
+            <div id="q4"
+                <p>What was Ed's favorite animal?</p>
+                <input type="radio" id="multipleChoice4A" name="question4" value="a">Horse<br>
+                <input type="radio" id="multipleChoice4b" name="question4" value="b">Buttered toast<br>
+                <input type="radio" id="multipleChoice4C" name="question4" value="c">Cow<br>
+                <input type="radio" id="multipleChoice4D" name="question4" value="d">Chicken<br>
+            </div>
+            <br>
+            <button id="submit-button" type="button" value="submit" onclick=>Click to Submit</button>
+        </div>
+    </div>
+</div>    
+<div class="row">
+    <div id="final-page">
+    <p class="col-6" id="numberCorrect"></p>
+    <p class="col-6" id="numberIncorrect"></p>
+    </div>
+</div>
+
+<script src="assets/javascript/game.js"></script>
 </body>
 </html>

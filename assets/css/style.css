@@ -1,0 +1,36 @@
+body {
+  background-color: gray;
+}
+
+#quiz-box {
+  display: none;
+}
+#final-page {
+  display: none;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 25px;
+  text-align: center;
+}
+
+.row {
+  background-color: aquamarine;
+  margin-left: 25%;
+  margin-right: 25%;
+  margon-top: 10%;
+  padding: 25px;
+}
+
+#start-screen {
+  text-align: center;
+}
+#numberCorrect {
+  float: left;
+}
+#numberIncorrect {
+  float: right;
+}
+
+#title {
+  text-align: center;
+}
